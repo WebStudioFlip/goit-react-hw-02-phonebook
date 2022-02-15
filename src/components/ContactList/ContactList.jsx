@@ -16,10 +16,14 @@ const ContactList = (props)=> {
 export default ContactList;
 
 ContactList.defaultProps = {
-    options: []
+    contacts: []
 }
 
 ContactList.propTypes = {       
-            contacts: PropTypes.array, 
+            contacts: PropTypes.arrayOf(PropTypes.shape({
+                name: PropTypes.string.isRequired,
+                number: PropTypes.number.isRequired,
+                id: PropTypes.string.isRequired
+            }) ), 
             removeContact:PropTypes.func,        
 }
