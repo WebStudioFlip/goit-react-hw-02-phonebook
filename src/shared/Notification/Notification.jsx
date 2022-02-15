@@ -8,10 +8,8 @@ return (
 )
 }
 
-Notification.propTypes = {    
-    props : PropTypes.shape({
-        message: PropTypes.string.isRequired
-    })
+Notification.propTypes = {       
+        message: PropTypes.string.isRequired   
 }
 
 export default Notification;

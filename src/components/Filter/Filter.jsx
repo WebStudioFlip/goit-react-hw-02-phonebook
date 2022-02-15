@@ -13,11 +13,7 @@ const Filter = (props)=> {
 
 export default Filter;
 
-Filter.propTypes = {   
-    props: PropTypes.shape(
-        {
+Filter.propTypes = {       
             filter:PropTypes.string,
-            filterContacts:PropTypes.func,
-        }
-    ) 
+            filterContacts:PropTypes.func,        
 }

@@ -19,11 +19,7 @@ ContactList.defaultProps = {
     options: []
 }
 
-ContactList.propTypes = {   
-    props: PropTypes.shape(
-        {
+ContactList.propTypes = {       
             contacts: PropTypes.array, 
-            removeContact:PropTypes.func,
-        }
-    ) 
+            removeContact:PropTypes.func,        
 }
